@@ -15,3 +15,5 @@ class RichWord:
 
     def __str__(self):
         return self._parola
+    def __repr__(self):
+        return f"{self._parola}: {self._corretta}"

@@ -10,20 +10,23 @@ while(True):
 
     if int(txtIn) == 1:
         print("Inserisci la tua frase in Italiano\n")
-        txtIn = input()
-        sc.handleSentence(txtIn,"italian")
+        sc.addLingua('Italian')
+        txtInStr = input()
+        sc.handleSentence(txtInStr,"Italian")
         continue
 
     if int(txtIn) == 2:
         print("Inserisci la tua frase in Inglese\n")
-        txtIn = input()
-        sc.handleSentence(txtIn,"english")
+        sc.addLingua('English')
+        txtInStr = input()
+        sc.handleSentence(txtInStr,"English")
         continue
 
     if int(txtIn) == 3:
         print("Inserisci la tua frase in Spagnolo\n")
-        txtIn = input()
-        sc.handleSentence(txtIn,"spanish")
+        sc.addLingua('Spanish')
+        txtInStr = input()
+        sc.handleSentence(txtInStr,"Spanish")
         continue
 
     if int(txtIn) == 4:
